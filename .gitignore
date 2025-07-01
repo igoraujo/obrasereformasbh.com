@@ -1,0 +1,72 @@
+# Sistema operacional
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.icloud
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Logs
+*.log
+
+# Arquivos temporários de editores
+*.swp
+*.swo
+.vscode/
+.idea/
+*.bak
+
+# Cache
+.cache/
+.cache-loader/
+
+# Node.js (caso use futuramente)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build/output (caso use ferramentas de build)
+dist/
+build/
+out/
+
+# Arquivos de upload temporários
+*.tmp
+
+# Configurações locais
+.env
+.env.*
