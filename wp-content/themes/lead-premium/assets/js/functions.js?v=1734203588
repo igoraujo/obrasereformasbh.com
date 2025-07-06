@@ -1,16 +1,56 @@
-/* PRIVACY POLICY */
-function setCookie(d, e, b) { var c = ""; if (b) { var a = new Date; a.setTime(a.getTime() + 864e5 * b), c = "; expires=" + a.toUTCString() } document.cookie = d + "=" + (e || "") + c + "; path=/" } function getCookie(e) { for (var c = e + "=", d = document.cookie.split(";"), b = 0; b < d.length; b++) { for (var a = d[b]; " " == a.charAt(0);)a = a.substring(1, a.length); if (0 == a.indexOf(c)) return a.substring(c.length, a.length) } return null } function eraseCookie(a) { document.cookie = a + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;" } function onclickdisclaimer() { document.getElementById("bottom-disclaimer").innerHTML = "", setCookie("accept-cookies", "1", 10950), location.reload() } function onclickremovedisclaimer() { setCookie("accept-cookies", "0", 10950), document.cookie = "accept-cookies=; expires=Thu, 01-Jan-70 00:00:01 GMT;", document.getElementById("bottom-disclaimer").innerHTML = '<div id="cookieinfo"><div onclick="onclickdisclaimer()" id="cookieinfo-close">OK</div><div id="cookieinfo-text">Ao usar esse site, você aceita nossos termos de uso e política de privacidade, saiba mais <a href="'+privacy_policy+'" title="Pol\xedtica de privacidade" target="_blank" rel="noopener nofollow" style="color:white;font-weight:800">clicando aqui</a>.</div></div>', location.reload() } var temp_cookie = getCookie("accept-cookies"); function refreshTime() { var a = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" }).replace(", ", " - "); document.getElementById("curr-time-clock").innerHTML = a } temp_cookie && 0 != temp_cookie || (document.getElementById("bottom-disclaimer").innerHTML = '<div id="cookieinfo"><div onclick="onclickdisclaimer()" id="cookieinfo-close">OK</div><div id="cookieinfo-text">Ao usar esse site, você aceita nossos termos de uso e política de privacidade, saiba mais <a href="'+privacy_policy+'" title="Pol\xedtica de privacidade" target="_blank" rel="noopener nofollow" style="color:white;font-weight:800">clicando aqui</a>.</div></div>');
-/* FORM */
-function onSubmitContactForm(c) { if (document.querySelector("#contact-form").reportValidity()) { var a = $("#contact-form").serializeArray(), b = $("#contact-form-button-send"); return b.html("Enviando..."), $("#contact-form *").prop("disabled", !0), newClientForm(a),a.push({name : 'url',value : CURR_URL}),$.ajax({ type: "POST", url: CURR_URL + "/send-contact/", data: a, dataType: "json", success: function(a) { b.html("Enviar"), $("#contact-form *").prop("disabled", !1), 200 == a.status ? ($(".alert-success").show(), $(".alert-danger").hide(), $("#contact-form")[0].reset()) : ($(".alert-success").hide(), $(".alert-danger").show()), setTimeout(function() { $(".alert-danger").hide(), $(".alert-success").hide() }, 5e3) } }), !1 } }
-function lead_mask(e,a){setTimeout(function(){var a=lead_mphone(e.value);a!=e.value&&(e.value=a)},1)}function lead_mphone(e){var a=e.replace(/\D/g,"");return(a=a.replace(/^0/,"")).length>10?a.replace(/^(\d\d)(\d{5})(\d{4}).*/,"($1) $2-$3"):a.length>5?a.replace(/^(\d\d)(\d{4})(\d{0,4}).*/,"($1) $2-$3"):a.length>2?a.replace(/^(\d\d)(\d{0,5})/,"($1) $2"):a.replace(/^(\d*)/,"($1")}
-function newEvent(e,n,t){if(n){t||(t=function(){});var o=CURR_MAIN_URL+"/wp-json/news/v1/events",i=localStorage.getItem("ld");if(!i){let a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",d=a.length;for(let l=0;l<10;l++)i+=a.charAt(Math.floor(Math.random()*d));localStorage.setItem("ld",i)}fetch(o,{method:"POST",body:JSON.stringify({event:e,...n,localId:i,device:getDeviceType()}),headers:{"Content-Type":"application/json"}}).then(function(e){e.json().then(e=>{t(e)})})}}function getDeviceType(){let e=navigator.userAgent,n=e.indexOf("Windows")>-1||e.indexOf("Macintosh")>-1,t=/(Android|iPhone|iPod|iPad|Windows Phone)/i.test(e),o=/(iPad|Android)/i.test(e)&&!/(Mobile)/i.test(e);return n?"desktop":t?"mobile":o?"tablet":"other"}function newClientForm(e){let n=e.find(e=>"form_name"==e.name)?.value,t=e.find(e=>"form_email"==e.name)?.value,o=e.find(e=>"form_phone"==e.name)?.value,i={name:n,email:t,phone:o,pageId:PAGE_ID,location:"formulario-de-contato"};CATEGORY_NAME&&CATEGORY_NAME?.length>0&&(i.page={category:CATEGORY_NAME}),newEvent("new-email",i)}$(document).ready(function(){$(".btn-event-goh").on("click",function(e){var n=$(this).attr("data-loc");if(n?.length>0){var t={location:n,pageId:PAGE_ID||null};CATEGORY_NAME&&CATEGORY_NAME?.length>0&&(t.page={category:CATEGORY_NAME}),newEvent("new-lead",t)}})});function newPush(e){let n={client:e,pageId:PAGE_ID,location:"web-push"};CATEGORY_NAME&&CATEGORY_NAME?.length>0&&(n.page={category:CATEGORY_NAME}),newEvent("web-push",n)}
-/* LOAD ASYNC CSS */
-const decodeHTML = function(html){ const textarea = document.createElement('textarea'); textarea.innerHTML = html; return textarea.value; }; const getItemsFromContainerText = function(container, selector){ const parser = new DOMParser(); const parsedHtml = parser.parseFromString(decodeHTML(container.textContent), 'text/html'); return parsedHtml.querySelectorAll(selector); };
-function loadCss(){ const cssContainers = document.querySelectorAll('noscript[data-css-lazyload]'); if(!cssContainers){ return; } const styleSheets = document.createDocumentFragment(); for(const cssContainer of cssContainers){ const sheets = getItemsFromContainerText(cssContainer, 'link[rel="stylesheet"]'); styleSheets.append(...sheets); cssContainer.remove(); } document.head.append(styleSheets); } loadCss();
-/* LISTED BOX BUTTON */
-$('.listed-box-button').click(function() { var boxbutton = $(this).closest('.infos').find('h3 a').attr('href'); window.location.href=boxbutton; });
-/* LISTED BOX IMG */
-$('.listed-box-img').click(function() { var boximg = $(this).closest('.listed-box').find('.infos h3 a').attr('href'); window.location.href=boximg; });
-/* INSTANT PAGE */
-/*! instant.page v5.2.0 - (C) 2019-2023 Alexandre Dieulot - https://instant.page/license */
-let t,e,n,o,i,a=null,s=65,c=new Set;const r=1111;function d(t){o=performance.now();const e=t.target.closest("a");m(e)&&p(e.href,"high")}function u(t){if(performance.now()-o<r)return;if(!("closest"in t.target))return;const e=t.target.closest("a");m(e)&&(e.addEventListener("mouseout",f,{passive:!0}),i=setTimeout(()=>{p(e.href,"high"),i=void 0},s))}function l(t){const e=t.target.closest("a");m(e)&&p(e.href,"high")}function f(t){t.relatedTarget&&t.target.closest("a")==t.relatedTarget.closest("a")||i&&(clearTimeout(i),i=void 0)}function h(t){if(performance.now()-o<r)return;const e=t.target.closest("a");if(t.which>1||t.metaKey||t.ctrlKey)return;if(!e)return;e.addEventListener("click",function(t){1337!=t.detail&&t.preventDefault()},{capture:!0,passive:!1,once:!0});const n=new MouseEvent("click",{view:window,bubbles:!0,cancelable:!1,detail:1337});e.dispatchEvent(n)}function m(o){if(o&&o.href&&(!n||"instant"in o.dataset)){if(o.origin!=location.origin){if(!(e||"instant"in o.dataset)||!a)return}if(["http:","https:"].includes(o.protocol)&&("http:"!=o.protocol||"https:"!=location.protocol)&&(t||!o.search||"instant"in o.dataset)&&!(o.hash&&o.pathname+o.search==location.pathname+location.search||"noInstant"in o.dataset))return!0}}function p(t,e="auto"){if(c.has(t))return;const n=document.createElement("link");n.rel="prefetch",n.href=t,n.fetchPriority=e,n.as="document",document.head.appendChild(n),c.add(t)}!function(){if(!document.createElement("link").relList.supports("prefetch"))return;const o="instantVaryAccept"in document.body.dataset||"Shopify"in window,i=navigator.userAgent.indexOf("Chrome/");i>-1&&(a=parseInt(navigator.userAgent.substring(i+"Chrome/".length)));if(o&&a&&a<110)return;const c="instantMousedownShortcut"in document.body.dataset;t="instantAllowQueryString"in document.body.dataset,e="instantAllowExternalLinks"in document.body.dataset,n="instantWhitelist"in document.body.dataset;const r={capture:!0,passive:!0};let f=!1,v=!1,g=!1;if("instantIntensity"in document.body.dataset){const t=document.body.dataset.instantIntensity;if(t.startsWith("mousedown"))f=!0,"mousedown-only"==t&&(v=!0);else if(t.startsWith("viewport")){const e=navigator.connection&&navigator.connection.saveData,n=navigator.connection&&navigator.connection.effectiveType&&navigator.connection.effectiveType.includes("2g");e||n||("viewport"==t?document.documentElement.clientWidth*document.documentElement.clientHeight<45e4&&(g=!0):"viewport-all"==t&&(g=!0))}else{const e=parseInt(t);isNaN(e)||(s=e)}}v||document.addEventListener("touchstart",d,r);f?c||document.addEventListener("mousedown",l,r):document.addEventListener("mouseover",u,r);c&&document.addEventListener("mousedown",h,r);if(g){let t=window.requestIdleCallback;t||(t=(t=>{t()})),t(function(){const t=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){const n=e.target;t.unobserve(n),p(n.href)}})});document.querySelectorAll("a").forEach(e=>{m(e)&&t.observe(e)})},{timeout:1500})}}();
+// Funções de cookie
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + d.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0)
+      return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// Ao clicar em OK
+function onclickdisclaimer() {
+  setCookie("accept-cookies", "1", 10950); // 30 anos
+  sessionStorage.setItem("acceptedDisclaimer", "true");
+  document.getElementById("bottom-disclaimer").innerHTML = "";
+}
+
+// Força remoção (opcional)
+function onclickremovedisclaimer() {
+  setCookie("accept-cookies", "0", 10950);
+  document.cookie = "accept-cookies=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+  sessionStorage.removeItem("acceptedDisclaimer");
+  document.getElementById("bottom-disclaimer").innerHTML = disclaimerHTML;
+}
+
+// Banner HTML
+var privacy_policy = "./politica-de-privacidade/index.html";
+var disclaimerHTML = `
+  <div id="cookieinfo">
+    <div onclick="onclickdisclaimer()" id="cookieinfo-close">OK</div>
+    <div id="cookieinfo-text">
+      Ao usar esse site, você aceita nossos termos de uso e política de privacidade,
+      saiba mais <a href="${privacy_policy}" title="Política de privacidade" target="_blank" rel="noopener nofollow" style="color:white;font-weight:800">clicando aqui</a>.
+    </div>
+  </div>`;
+
+// Exibição condicional
+var cookie = getCookie("accept-cookies");
+var sessionAccepted = sessionStorage.getItem("acceptedDisclaimer");
+
+if ((!cookie || cookie == "0") && !sessionAccepted) {
+  document.getElementById("bottom-disclaimer").innerHTML = disclaimerHTML;
+}
