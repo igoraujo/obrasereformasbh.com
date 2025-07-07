@@ -23,7 +23,7 @@ header {
 }
 
 .servicos-area .box-article .infos .btn-orcamento:hover {
-    border: 1px solid #045857;
+    border: 1px solid #045857 !important;
     color: #045857
 }
 
@@ -49,7 +49,7 @@ header {
 }
 
 .btn-orcamento {
-    border: 1px solid #045857
+    border: 1px solid #045857 !important
 }
 
 .btn-orcamento:hover {
@@ -98,7 +98,7 @@ header .infos-menu-mobile .menu-mobile li a:hover {
 }
 
 .servicos-area .box-article .infos .btn-orcamento {
-    border: 1px solid #045857
+    border: 1px solid #045857 !important
 }
 
 .cta-area .btn-orcamento {
@@ -124,7 +124,7 @@ header .infos-menu-mobile .menu-mobile li a:hover {
 }
 
 .box-phone-white {
-    border: 1px solid #045857
+    border: 1px solid #045857 !important
 }
 
 header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
