@@ -17,25 +17,17 @@
         }
 
         // Função para inicializar scripts que podem depender do footer
-        function initializeFooterDependentScripts() {
-            console.log('Scripts dependentes do footer inicializados.');
-        }
+
 
         // Inicialização principal da página
         document.addEventListener('DOMContentLoaded', async () => {
             console.log('DOM Content Loaded. Iniciando carregamento do footer...');
             const footerLoaded = await loadHTML('../footer.html', 'footer-placeholder');
 
-            if (footerLoaded) {
-                initializeFooterDependentScripts();
-            } else {
+            if (!footerLoaded) {
                 console.error('Falha ao carregar Footer. Scripts dependentes não serão inicializados.');
             }
-
-            // O código abaixo é a inicialização dos Swipers e Back to Top Button,
-            // que não dependem do footer, então podem ser inicializados aqui.
-            // Mantenha essa parte do seu script.js ou adicione aqui se já não estiver.
-
+            
             // Inicializa o Swiper para o Hero Section
             const heroSlider = document.querySelector('.hero-slider');
             if (heroSlider) {
