@@ -2,6 +2,10 @@ header {
     background-color: #045857
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .banner-area {
     background-color: #033b3a
 }
@@ -316,4 +320,8 @@ header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
     border-radius: 3px;
     background: #045857;
     transition: .3s linear;
+}
+
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+    contain-intrinsic-size: 3000px 1500px !important;
 }
