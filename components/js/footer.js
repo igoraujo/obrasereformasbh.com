@@ -24,7 +24,7 @@
         // Inicialização principal da página
         document.addEventListener('DOMContentLoaded', async () => {
             console.log('DOM Content Loaded. Iniciando carregamento do footer...');
-            const footerLoaded = await loadHTML('../footer.html', 'footer-placeholder');
+            const footerLoaded = await loadHTML('/components/footer.html', 'footer-placeholder');
 
             if (footerLoaded) {
                 initializeFooterDependentScripts();

@@ -16,25 +16,18 @@ async function loadHTML(url, elementId) {
     }
 }
 
-// Função para inicializar scripts que podem depender do orcamento
-function initializeOrcamentoDependentScripts() {
-    console.log('Scripts dependentes do orcamento inicializados.');
-}
+
 
 // Inicialização principal da página
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('DOM Content Loaded. Iniciando carregamento do orcamento...');
-    const orcamentoLoaded = await loadHTML('../orcamento.html', 'orcamento-placeholder');
+    console.log('DOM Content Loaded. Iniciando carregamento do header...');
+    const headerLoaded = await loadHTML('/components/header.html', 'header-placeholder');
 
-    if (orcamentoLoaded) {
-        initializeOrcamentoDependentScripts();
+    if (headerLoaded) {
+        initializeHeaderDependentScripts();
     } else {
-        console.error('Falha ao carregar orcamento. Scripts dependentes não serão inicializados.');
+        console.error('Falha ao carregar header. Scripts dependentes não serão inicializados.');
     }
-
-    // O código abaixo é a inicialização dos Swipers e Back to Top Button,
-    // que não dependem do orcamento, então podem ser inicializados aqui.
-    // Mantenha essa parte do seu script.js ou adicione aqui se já não estiver.
 
     // Inicializa o Swiper para o Hero Section
     const heroSlider = document.querySelector('.hero-slider');
@@ -54,6 +47,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 prevEl: '.swiper-button-prev',
             },
         });
+    }
+
+    function initializeHeaderDependentScripts() {
+        console.log('Scripts dependentes do header inicializados.');
     }
 
     // Inicializa o Swiper para os Testimonials Section
