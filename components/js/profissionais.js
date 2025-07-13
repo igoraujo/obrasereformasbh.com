@@ -1,54 +1,5 @@
 // filepath: /Users/igor.araujo/dev/projects/sites/obrasereformasbh.com/index.html
-const profissionais = [
-    {
-        img: "/assets/img/2022/06/arquiteto.jpg.webp",
-        alt: "Arquiteto",
-        href: "/profissionais/arquiteto/index.html",
-        titulo: "Arquiteto"
-    },
-    {
-        img: "/assets/img/2022/06/bombeiro-hidraulico-em-bh.jpg.webp",
-        alt: "Bombeiro hidráulico",
-        href: "/profissionais/bombeiro-hidraulico/index.html",
-        titulo: "Bombeiro hidráulico"
-    },
-    {
-        img: "/assets/img/2022/06/decoradora-em-bh.jpg.webp",
-        alt: "Decoradora",
-        href: "/profissionais/decoradora/index.html",
-        titulo: "Decoradora"
-    },
-    {
-        img: "/assets/img/2022/06/eletricista-em-bh.jpg.webp",
-        alt: "Eletricista",
-        href: "/profissionais/eletricista/index.html",
-        titulo: "Eletricista"
-    },
-    {
-        img: "/assets/img/engenheiro-civil-em-bh.jpg.webp",
-        alt: "Engenheiro civil",
-        href: "/profissionais/engenheiro-civil/index.html",
-        titulo: "Engenheiro civil"
-    },
-    {
-        img: "/assets/img/2022/06/gesseiro-em-bh.jpg.webp",
-        alt: "Gesseiro",
-        href: "/profissionais/gesseiro/index.html",
-        titulo: "Gesseiro"
-    },
-    {
-        img: "/assets/img/2022/06/pedreiro-em-bh.jpg.webp",
-        alt: "Pedreiro",
-        href: "/profissionais/pedreiro/index.html",
-        titulo: "Pedreiro"
-    },
-    {
-        img: "/assets/img/2022/06/pintor-em-bh.jpg.webp",
-        alt: "Pintor",
-        href: "/profissionais/pintor/index.html",
-        titulo: "Pintor"
-    }
-];
+import profissionais from './proficionais-lista.js';
 
 function renderProfissionais() {
     const container = document.getElementById('profissionais-lista');

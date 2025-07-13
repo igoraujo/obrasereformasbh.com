@@ -18,18 +18,13 @@ async function loadHTMLInPlaceholders(url, className) {
     }
 }
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('DOM Content Loaded. Iniciando carregamento do orçamento...');
-    
-    const scriptElement = document.currentScript;
+    console.log('DOM Content Loaded. Iniciando carregamento do contato...');
 
-    const nomeUsuario = scriptElement.dataset.nomeUsuario;
-    const idade = parseInt(scriptElement.dataset.idade); // Converter para número
-    const nivel = scriptElement.dataset.nivel;
-    const orcamentoLoaded = await loadHTMLInPlaceholders('/components/orcamento.html', 'orcamento-placeholder');
+    const contatoLoaded = await loadHTMLInPlaceholders('/components/contato.html', 'contato-placeholder');
 
-    if (orcamentoLoaded) {
-        console.log('Scripts dependentes do orçamento inicializados.');
+    if (contatoLoaded) {
+        console.log('Scripts dependentes do contato inicializados.');
     } else {
-        console.error('Falha ao carregar orçamento. Scripts dependentes não serão inicializados.');
+        console.error('Falha ao carregar contato. Scripts dependentes não serão inicializados.');
     }
 });
