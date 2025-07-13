@@ -2,37 +2,37 @@ const postsBlog = [
     {
         img: "/assets/img/como-pintar-uma-casa.jpg.webp",
         alt: "Como pintar uma casa: 7 passos",
-        href: "/como-pintar-uma-casa/",
+        href: "/blog/como-pintar-uma-casa/",
         titulo: "Como pintar uma casa: 7 passos"
     },
     {
         img: "/assets/img/construir-uma-casa-do-zero.jpg.webp",
         alt: "Construir uma casa do zero: 7 etapas",
-        href: "/construir-uma-casa-do-zero/",
+        href: "/blog/construir-uma-casa-do-zero/",
         titulo: "Construir uma casa do zero: 7 etapas"
     },
     {
         img: "/assets/img/acidentes-domesticos.jpg.webp",
         alt: "Acidentes domésticos: 8 exemplos e como evitá-los",
-        href: "/acidentes-domesticos/",
+        href: "/blog/acidentes-domesticos/",
         titulo: "Acidentes domésticos: 8 exemplos e como evitá-los"
     },
     {
         img: "/assets/img/como-funciona-um-compressor-de-ar.jpg.webp",
         alt: "Como funciona um compressor de ar: 5 tipos",
-        href: "/como-funciona-um-compressor-de-ar/",
+        href: "/blog/como-funciona-um-compressor-de-ar/",
         titulo: "Como funciona um compressor de ar: 5 tipos"
     },
     {
         img: "/assets/img/2022/12/qual-o-melhor-portao-basculante-ou-de-correr.jpg.webp",
         alt: "Portão basculante ou de correr: 9 diferenças",
-        href: "/portao-basculante-ou-de-correr/",
+        href: "/blog/portao-basculante-ou-de-correr/",
         titulo: "Portão basculante ou de correr: 9 diferenças"
     },
     {
         img: "/assets/img/2022/06/como-fazer-parede-de-pedra-natural.jpg.webp",
         alt: "Como fazer parede de pedra natural: 10 dicas",
-        href: "/como-fazer-parede-de-pedra-natural/",
+        href: "/blog/como-fazer-parede-de-pedra-natural/",
         titulo: "Como fazer parede de pedra natural: 10 dicas"
     }
 ];

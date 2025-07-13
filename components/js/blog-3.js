@@ -2,7 +2,7 @@ const postsBlog = [
     {
         img: "/assets/img/2022/06/tipos-de-madeira-para-telhado.jpg.webp",
         alt: "Tipos de madeira para telhado: 5 melhores",
-        href: "/tipos-de-madeira-para-telhado/index.html",
+        href: "/blog/tipos-de-madeira-para-telhado/index.html",
         titulo: "Tipos de madeira para telhado: 5 melhores"
     }
 ];

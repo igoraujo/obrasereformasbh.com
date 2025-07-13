@@ -2,37 +2,37 @@ const postsBlog = [
     {
         img: "/assets/img/2022/06/como-reformar-casas-gastando-pouco.jpg.webp",
         alt: "Como reformar casas gastando pouco: 15 dicas de engenheiros",
-        href: "/como-reformar-casas-gastando-pouco/index.html",
+        href: "/blog/como-reformar-casas-gastando-pouco/index.html",
         titulo: "Como reformar casas gastando pouco: 15 dicas de engenheiros"
     },
     {
         img: "/assets/img/2022/06/tipos-de-divisorias-para-escritorio.jpg.webp",
         alt: "Tipos de divisórias para escritório: 10 opções",
-        href: "/tipos-de-divisorias-para-escritorio/index.html",
+        href: "/blog/tipos-de-divisorias-para-escritorio/index.html",
         titulo: "Tipos de divisórias para escritório: 10 opções"
     },
     {
         img: "/assets/img/2022/06/como-construir-casas-baratas.jpg.webp",
         alt: "Como construir casas baratas: 14 dicas de engenheiros",
-        href: "/como-construir-casas-baratas/index.html",
+        href: "/blog/como-construir-casas-baratas/index.html",
         titulo: "Como construir casas baratas: 14 dicas de engenheiros"
     },
     {
         img: "/assets/img/2022/06/como-reformar-um-banheiro-pequeno.jpg.webp",
         alt: "Como reformar um banheiro pequeno: 11 dicas",
-        href: "/como-reformar-um-banheiro-pequeno/index.html",
+        href: "/blog/como-reformar-um-banheiro-pequeno/index.html",
         titulo: "Como reformar um banheiro pequeno: 11 dicas"
     },
     {
         img: "/assets/img/2022/06/como-economizar-energia-eletrica.jpg.webp",
         alt: "Como economizar energia elétrica: 18 dicas",
-        href: "/como-economizar-energia-eletrica/index.html",
+        href: "/blog/como-economizar-energia-eletrica/index.html",
         titulo: "Como economizar energia elétrica: 18 dicas"
     },
     {
         img: "/assets/img/2022/06/como-reformar-banheiro-gastando-pouco.jpg.webp",
         alt: "Como reformar banheiro gastando pouco: 18 dicas",
-        href: "/como-reformar-banheiro-gastando-pouco/index.html",
+        href: "/blog/como-reformar-banheiro-gastando-pouco/index.html",
         titulo: "Como reformar banheiro gastando pouco: 18 dicas"
     }
 ];
