@@ -178,7 +178,7 @@
             const increment = 100 / totalSteps; // Incremento de porcentagem por passo
 
             const updateProgress = setInterval(() => {
-                if (progress >= 50) {
+                if (progress >= 80) {
                     clearInterval(updateProgress); // Para o intervalo quando atingir 50%
                     progressText.textContent = `${progress}% Concluído!`;
                 } else {
