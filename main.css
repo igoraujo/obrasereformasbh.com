@@ -1,5 +1,5 @@
 header {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 a {
@@ -7,66 +7,66 @@ a {
 }
 
 .banner-area {
-    background-color: #033b3a
+    background-color: #023047
 }
 
 .cta-area2 {
-    background-color: #ffa500
+    background-color: #fb8500
 }
 
 .cta-area2 .btn-orcamento {
-    color: #045857
+    color: #219ebc
 }
 
 .cta-area2 .btn-orcamento:hover {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .servicos-area .box-article .infos .btn-orcamento {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .servicos-area .box-article .infos .btn-orcamento:hover {
-    border: 1px solid #045857 !important;
-    color: #045857
+    border: 1px solid #219ebc !important;
+    color: #219ebc
 }
 
 .footer-area {
-    background-color: #045857
+    background-color: #023047
 }
 
 .footer-area .box-copyright {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .header .infos-menu-mobile .menu-mobile li:hover .menu-dropdown li a:hover {
-    background-color: #045857;
-    border-left: 3px solid #ffa500;
+    background-color: #219ebc;
+    border-left: 3px solid #fb8500;
 }
 
 .sidebar .menu-sidebar li a {
-    background: #045857
+    background: #219ebc
 }
 
 .sidebar .menu-sidebar-blog li a {
-    color: #045857
+    color: #219ebc
 }
 
 .btn-orcamento {
-    border: 1px solid #045857 !important
+    border: 1px solid #219ebc !important
 }
 
 .btn-orcamento:hover {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .bloco-content-texto a:hover {
     transition: 0.6s;
-    color: #045857
+    color: #219ebc
 }
 
 .bloco-content-texto .box-phones .infos-addres a:hover {
-    color: #045857
+    color: #219ebc
 }
 
 .bloco-content-texto .form-contact .btn-contact:hover {
@@ -77,44 +77,44 @@ a {
 
 header .box-address .btn-orcamento,
 header .box-phone .btn-orcamento {
-    color: #045857
+    color: #219ebc
 }
 
 header .box-address .btn-orcamento:hover,
 header .box-phone .btn-orcamento:hover {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 header .infos-menu-mobile .menu-mobile li a:hover {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .banner-area .box-infos-banner .btn-orcamento {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .banner-area .box-infos-banner .btn-orcamento:hover {
-    color: #045857
+    color: #219ebc
 }
 
 .servicos-area .box-article figure:before {
-    background: #045857
+    background: #219ebc
 }
 
 .servicos-area .box-article .infos .btn-orcamento {
-    border: 1px solid #045857 !important
+    border: 1px solid #219ebc !important
 }
 
 .cta-area .btn-orcamento {
-    color: #045857
+    color: #219ebc
 }
 
 .cta-area .btn-orcamento:hover {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .breadcrumb-area {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .page-contato .form-contact .btn-contact:hover {
@@ -124,61 +124,61 @@ header .infos-menu-mobile .menu-mobile li a:hover {
 }
 
 .header-area .infos-menu-mobile .menu-mobile li a:hover {
-    background-color: #045857
+    background-color: #219ebc
 }
 
 .box-phone-white {
-    border: 1px solid #045857 !important
+    border: 1px solid #219ebc !important
 }
 
 header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
-    border-left: 3px solid #ffa500
+    border-left: 3px solid #fb8500
 }
 
 .sidebar .title-sidebar::before {
-    background: #ffa500
+    background: #fb8500
 }
 
 .sidebar .menu-sidebar li a i,
 .sidebar .menu-sidebar li a svg {
-    color: #ffa500
+    color: #fb8500
 }
 
 .sidebar .menu-sidebar li a:hover {
-    background-color: #ffa500
+    background-color: #fb8500
 }
 
 .sidebar .menu-sidebar .active {
-    background-color: #ffa500
+    background-color: #fb8500
 }
 
 .sidebar .menu-sidebar-blog li a i,
 .sidebar .menu-sidebar-blog li a svg {
-    color: #ffa500
+    color: #fb8500
 }
 
 .sidebar .menu-sidebar-blog li a:hover {
-    background-color: #ffa500
+    background-color: #fb8500
 }
 
 .sidebar .menu-sidebar-blog .active {
-    background-color: #ffa500
+    background-color: #fb8500
 }
 
 .sidebar .box-infos-more-recentes a:hover {
-    color: #ffa500
+    color: #fb8500
 }
 
 .box-up-to-scroll {
-    background: #ffa500
+    background: #fb8500
 }
 
 .bloco-content-texto a {
-    text-decoration-color: #ffa500
+    text-decoration-color: #fb8500
 }
 
 .bloco-content-texto .box-phones .infos-addres a {
-    text-decoration-color: #ffa500
+    text-decoration-color: #fb8500
 }
 
 .bloco-content-texto .form-contact .btn-contact {
@@ -188,36 +188,36 @@ header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
 
 .bloco-content-texto ul li a:hover,
 .bloco-content-texto ol li a:hover {
-    color: #ffa500
+    color: #fb8500
 }
 
 .footer-area .menu-footer li a:hover {
-    color: #ffa500
+    color: #fb8500
 }
 
 .footer-area .menu-footer li .active {
-    color: #ffa500
+    color: #fb8500
 }
 
 .footer-area .box-logo-text .box-socials a {
-    border: 1px solid #ffa500
+    border: 1px solid #fb8500
 }
 
 .footer-area .box-logo-text .box-socials a:hover {
-    background-color: #ffa500
+    background-color: #fb8500
 }
 
 .footer-area .box-address .infos-addres i,
 .footer-area .box-address .infos-addres svg {
-    color: #ffa500
+    color: #fb8500
 }
 
 .footer-area .box-address .infos-addres a:hover {
-    color: #ffa500
+    color: #fb8500
 }
 
 .breadcrumb-area .box-title-text .list-bread li .bread-active {
-    color: #ffa500
+    color: #fb8500
 }
 
 .page-contato .form-contact .btn-contact {
@@ -226,46 +226,46 @@ header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
 }
 
 .page-contato .box-infos-contact .infos-middle a:hover {
-    color: #ffa500
+    color: #fb8500
 }
 
 .header-area .logo-menu-area .box-menu .box-menu-desktop .menu li a:hover {
-    color: #ffa500
+    color: #fb8500
 }
 
 .header-area .logo-menu-area .box-menu .box-menu-desktop .menu li .active {
-    color: #ffa500
+    color: #fb8500
 }
 
 .header-area .logo-menu-area .box-menu .box-menu-desktop .menu li .menu-dropdown li a:hover {
-    border-left: 3px solid #ffa500
+    border-left: 3px solid #fb8500
 }
 
 .header-area .logo-menu-area .box-menu .box-menu-desktop .menu li:hover .menu-dropdown li a:hover {
-    border-left: 3px solid #ffa500
+    border-left: 3px solid #fb8500
 }
 
 .big-content .all-boxes .box-info {
-    border-top: solid #ffa500 10px;
+    border-top: solid #fb8500 10px;
 }
 
 .service_content_box .single-all-boxes .box-info {
-    border-top: solid #ffa500 10px;
+    border-top: solid #fb8500 10px;
 }
 
 .service_content_box .single-all-boxes .box-info p a {
-    text-decoration-color: #ffa500;
+    text-decoration-color: #fb8500;
 }
 
 .box-phone-white:hover {
-    border: 1px solid #ffa500;
+    border: 1px solid #fb8500;
     color: #fff;
     font-weight: bold;
-    background-color: #ffa500;
+    background-color: #fb8500;
     text-shadow: none;
     border-radius: 0.3em;
     box-shadow: none;
-    border: 1px solid #ffa500;
+    border: 1px solid #fb8500;
 }
 
 .box-phone-white:hover i {
@@ -273,17 +273,17 @@ header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
 }
 
 .footer-area .btn-invisible {
-    background-color: #045857;
+    background-color: #219ebc;
 }
 
 .footer-area .btn-invisible:hover {
-    background-color: #045857;
-    color: #ffa500;
+    background-color: #219ebc;
+    color: #fb8500;
     font-weight: 600;
 }
 
 .btn-orcamento-adjustable:hover {
-    background-color: #045857;
+    background-color: #219ebc;
     color: #fff !important;
 }
 
@@ -299,8 +299,8 @@ header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
 .pagination-wrap .pagination .page-link:hover {
     color: #fff;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-    background-color: #ffa500;
-    border-color: #ffa500;
+    background-color: #fb8500;
+    border-color: #fb8500;
 }
 
 .pagination-wrap .pagination .page-link {
@@ -318,7 +318,7 @@ header .infos-menu-mobile .menu-mobile li .menu-dropdown li a:hover {
     justify-content: center;
     border: 1px solid #cfcfcf;
     border-radius: 3px;
-    background: #045857;
+    background: #219ebc;
     transition: .3s linear;
 }
 
